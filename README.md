@@ -24,7 +24,7 @@ To update later, run `docker compose pull && docker compose up -d`.
 ## Add it to Plex
 
 1. In Plex, go to **Settings → Metadata Agents → Add Provider**. Enter `http://<docker-host>:3000/tv`.
-2. Add an agent and set **TheTVDB** as its primary provider. You can add other providers below it as fallbacks.
+2. Add an agent and set **TVDB** as its primary provider. You can add other providers below it as fallbacks.
 3. Edit your TV library (**Advanced**) and pick the new agent. Then refresh metadata.
 
 Plex Media Server must be able to reach the URL. If Plex runs in Docker on the same host, use the host's LAN IP, or put both containers on one network and use `http://plex-tvdb-provider:3000/tv`.
