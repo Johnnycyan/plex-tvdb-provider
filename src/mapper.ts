@@ -111,7 +111,7 @@ export function seasonTypes(series: TvdbSeries): PlexSeasonType[] {
     .filter((t) => t?.type && used.has(t.type))
     .map((t) => {
       const label = t.alternateName || t.name || t.type;
-      return { id: toPlexOrderId(t.type), source: 'tvdb', tag: label, title: `TheTVDB (${label})` };
+      return { id: toPlexOrderId(t.type), source: 'tvdb', tag: label, title: `TVDB (${label})` };
     });
 }
 

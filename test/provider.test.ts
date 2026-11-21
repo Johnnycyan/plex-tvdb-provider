@@ -147,8 +147,8 @@ describe('show metadata', () => {
     assert.deepEqual(show.Guid.map((g: any) => g.id), ['tvdb://1000', 'imdb://tt0000001']);
     assert.deepEqual(show.Role, [{ tag: 'Jane Doe', role: 'Hero', order: 1 }]);
     assert.deepEqual(show.SeasonType.map((s: any) => [s.id, s.title]), [
-      ['tvdbAiring', 'TheTVDB (Aired Order)'],
-      ['tvdbDvd', 'TheTVDB (DVD Order)'],
+      ['tvdbAiring', 'TVDB (Aired Order)'],
+      ['tvdbDvd', 'TVDB (DVD Order)'],
     ]);
     assert.deepEqual(show.Children.Metadata.map((s: any) => s.ratingKey), [
       'tvdb-season-1000-official-0',

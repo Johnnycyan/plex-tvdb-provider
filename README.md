@@ -31,7 +31,7 @@ Plex Media Server must be able to reach the URL. If Plex runs in Docker on the s
 
 ## Alternate episode orders
 
-Every show response includes a `SeasonType` list with the orders TheTVDB has for that show, for example `TheTVDB (DVD Order)`. When you choose an order for a show in Plex, Plex sends it back as `episodeOrder`. The provider then returns seasons and episodes renumbered in that order.
+Every show response includes a `SeasonType` list with the orders TheTVDB has for that show, for example `TVDB (DVD Order)`. When you choose an order for a show in Plex, Plex sends it back as `episodeOrder`. The provider then returns seasons and episodes renumbered in that order.
 
 - Order ids use Plex's naming, which Plex sends back as `episodeOrder`: `tvdbAiring` (TheTVDB's `official`), `tvdbDvd`, `tvdbAbsolute`, `tvdbAlternate`, `tvdbRegional`, `tvdbAltdvd`, `tvdbAlttwo`. Plain TheTVDB slugs (`dvd`) are accepted too.
 - With no order chosen, the show's TheTVDB default order is used. That is usually `official` (Aired).
